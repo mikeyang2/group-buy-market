@@ -1,0 +1,428 @@
+25-02-12.15:28:43.093 [main            ] WARN  ServiceAnnotationPostProcessor -  [DUBBO] No class annotated by Dubbo @Service was found under package [cn.ant0n.gbm.api.rpc], ignore re-scanned classes: 0, dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.15:28:48.718 [main            ] WARN  ServiceConfig          -  [DUBBO] Use random available port(20880) for protocol dubbo, dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.15:33:58.592 [main            ] WARN  ServiceAnnotationPostProcessor -  [DUBBO] No class annotated by Dubbo @Service was found under package [cn.ant0n.gbm.api.rpc], ignore re-scanned classes: 0, dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.15:34:04.228 [main            ] WARN  ServiceConfig          -  [DUBBO] Use random available port(20880) for protocol dubbo, dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.15:38:55.999 [main            ] WARN  MetadataUtils          -  [DUBBO] Remote Metadata Report Server is not provided or unavailable, will stop registering service definition to remote center!, dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.15:39:16.938 [NettyServerWorker-6-1] WARN  ExchangeCodec          -  [DUBBO] Fail to encode response: Response [id=0, version=2.0.2, status=20, event=false, error=null, result=AppResponse [value=Response(code=0000, info=成功, data=ProductMarketResponseDTO(groupBuyTeams=[ProductMarketResponseDTO.Team(userId=y1, remainCount=1, teamId=46168757, startTime=Sun Feb 09 13:41:15 GMT+08:00 2025, endTime=Thu Feb 13 14:01:15 GMT+08:00 2025, validTimeCountdown=22:21:58)], teamStatistic=ProductMarketResponseDTO.TeamStatistic(deductionPrice=11.99, originalPrice=12.00, payPrice=0.01, participateCount=2, completeGroupCount=0, inProgressGroupCount=1))), exception=null]], send bad_response info instead, cause: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+ Java field: private cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic cn.ant0n.gbm.api.dto.ProductMarketResponseDTO.teamStatistic
+ Java field: private java.lang.Object cn.ant0n.gbm.api.response.Response.data, dubbo version: 3.0.9, current host: 192.168.10.118
+java.lang.RuntimeException: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+ Java field: private cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic cn.ant0n.gbm.api.dto.ProductMarketResponseDTO.teamStatistic
+ Java field: private java.lang.Object cn.ant0n.gbm.api.response.Response.data
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:304)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeInstance(JavaSerializer.java:284)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeObject(JavaSerializer.java:251)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:412)
+	at org.apache.dubbo.common.serialize.hessian2.Hessian2ObjectOutput.writeObject(Hessian2ObjectOutput.java:92)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboCodec.encodeResponseData(DubboCodec.java:225)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encodeResponse(ExchangeCodec.java:309)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:73)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboCountCodec.encode(DubboCountCodec.java:47)
+	at org.apache.dubbo.remoting.transport.netty4.NettyCodecAdapter$InternalEncoder.encode(NettyCodecAdapter.java:69)
+	at io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:881)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+	at io.netty.handler.timeout.IdleStateHandler.write(IdleStateHandler.java:302)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:879)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+	at io.netty.channel.ChannelDuplexHandler.write(ChannelDuplexHandler.java:115)
+	at org.apache.dubbo.remoting.transport.netty4.NettyServerHandler.write(NettyServerHandler.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:879)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:940)
+	at io.netty.channel.AbstractChannelHandlerContext$WriteTask.run(AbstractChannelHandlerContext.java:1247)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.RuntimeException: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+ Java field: private cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic cn.ant0n.gbm.api.dto.ProductMarketResponseDTO.teamStatistic
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:304)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeInstance(JavaSerializer.java:284)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeObject(JavaSerializer.java:251)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:412)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:302)
+	... 32 common frames omitted
+Caused by: java.lang.IllegalStateException: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getDefaultSerializer(SerializerFactory.java:417)
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getSerializer(SerializerFactory.java:391)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:411)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:302)
+	... 36 common frames omitted
+25-02-12.15:39:17.303 [NettyServerWorker-6-1] WARN  ExchangeCodec          -  [DUBBO] Fail to encode response: Response [id=1, version=2.0.2, status=20, event=false, error=null, result=AppResponse [value=Response(code=0000, info=成功, data=ProductMarketResponseDTO(groupBuyTeams=[ProductMarketResponseDTO.Team(userId=y1, remainCount=1, teamId=46168757, startTime=Sun Feb 09 13:41:15 GMT+08:00 2025, endTime=Thu Feb 13 14:01:15 GMT+08:00 2025, validTimeCountdown=22:21:57)], teamStatistic=ProductMarketResponseDTO.TeamStatistic(deductionPrice=11.99, originalPrice=12.00, payPrice=0.01, participateCount=2, completeGroupCount=0, inProgressGroupCount=1))), exception=null]], send bad_response info instead, cause: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+ Java field: private cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic cn.ant0n.gbm.api.dto.ProductMarketResponseDTO.teamStatistic
+ Java field: private java.lang.Object cn.ant0n.gbm.api.response.Response.data, dubbo version: 3.0.9, current host: 192.168.10.118
+java.lang.RuntimeException: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+ Java field: private cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic cn.ant0n.gbm.api.dto.ProductMarketResponseDTO.teamStatistic
+ Java field: private java.lang.Object cn.ant0n.gbm.api.response.Response.data
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:304)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeInstance(JavaSerializer.java:284)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeObject(JavaSerializer.java:251)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:412)
+	at org.apache.dubbo.common.serialize.hessian2.Hessian2ObjectOutput.writeObject(Hessian2ObjectOutput.java:92)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboCodec.encodeResponseData(DubboCodec.java:225)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encodeResponse(ExchangeCodec.java:309)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:73)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboCountCodec.encode(DubboCountCodec.java:47)
+	at org.apache.dubbo.remoting.transport.netty4.NettyCodecAdapter$InternalEncoder.encode(NettyCodecAdapter.java:69)
+	at io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:881)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+	at io.netty.handler.timeout.IdleStateHandler.write(IdleStateHandler.java:302)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:879)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+	at io.netty.channel.ChannelDuplexHandler.write(ChannelDuplexHandler.java:115)
+	at org.apache.dubbo.remoting.transport.netty4.NettyServerHandler.write(NettyServerHandler.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:879)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:940)
+	at io.netty.channel.AbstractChannelHandlerContext$WriteTask.run(AbstractChannelHandlerContext.java:1247)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.RuntimeException: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+ Java field: private cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic cn.ant0n.gbm.api.dto.ProductMarketResponseDTO.teamStatistic
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:304)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeInstance(JavaSerializer.java:284)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeObject(JavaSerializer.java:251)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:412)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:302)
+	... 32 common frames omitted
+Caused by: java.lang.IllegalStateException: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getDefaultSerializer(SerializerFactory.java:417)
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getSerializer(SerializerFactory.java:391)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:411)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:302)
+	... 36 common frames omitted
+25-02-12.15:39:17.651 [NettyServerWorker-6-1] WARN  ExchangeCodec          -  [DUBBO] Fail to encode response: Response [id=2, version=2.0.2, status=20, event=false, error=null, result=AppResponse [value=Response(code=0000, info=成功, data=ProductMarketResponseDTO(groupBuyTeams=[ProductMarketResponseDTO.Team(userId=y1, remainCount=1, teamId=46168757, startTime=Sun Feb 09 13:41:15 GMT+08:00 2025, endTime=Thu Feb 13 14:01:15 GMT+08:00 2025, validTimeCountdown=22:21:57)], teamStatistic=ProductMarketResponseDTO.TeamStatistic(deductionPrice=11.99, originalPrice=12.00, payPrice=0.01, participateCount=2, completeGroupCount=0, inProgressGroupCount=1))), exception=null]], send bad_response info instead, cause: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+ Java field: private cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic cn.ant0n.gbm.api.dto.ProductMarketResponseDTO.teamStatistic
+ Java field: private java.lang.Object cn.ant0n.gbm.api.response.Response.data, dubbo version: 3.0.9, current host: 192.168.10.118
+java.lang.RuntimeException: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+ Java field: private cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic cn.ant0n.gbm.api.dto.ProductMarketResponseDTO.teamStatistic
+ Java field: private java.lang.Object cn.ant0n.gbm.api.response.Response.data
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:304)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeInstance(JavaSerializer.java:284)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeObject(JavaSerializer.java:251)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:412)
+	at org.apache.dubbo.common.serialize.hessian2.Hessian2ObjectOutput.writeObject(Hessian2ObjectOutput.java:92)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboCodec.encodeResponseData(DubboCodec.java:225)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encodeResponse(ExchangeCodec.java:309)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:73)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboCountCodec.encode(DubboCountCodec.java:47)
+	at org.apache.dubbo.remoting.transport.netty4.NettyCodecAdapter$InternalEncoder.encode(NettyCodecAdapter.java:69)
+	at io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:881)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+	at io.netty.handler.timeout.IdleStateHandler.write(IdleStateHandler.java:302)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:879)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+	at io.netty.channel.ChannelDuplexHandler.write(ChannelDuplexHandler.java:115)
+	at org.apache.dubbo.remoting.transport.netty4.NettyServerHandler.write(NettyServerHandler.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:879)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:940)
+	at io.netty.channel.AbstractChannelHandlerContext$WriteTask.run(AbstractChannelHandlerContext.java:1247)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.RuntimeException: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+ Java field: private cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic cn.ant0n.gbm.api.dto.ProductMarketResponseDTO.teamStatistic
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:304)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeInstance(JavaSerializer.java:284)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeObject(JavaSerializer.java:251)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:412)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:302)
+	... 32 common frames omitted
+Caused by: java.lang.IllegalStateException: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getDefaultSerializer(SerializerFactory.java:417)
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getSerializer(SerializerFactory.java:391)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:411)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:302)
+	... 36 common frames omitted
+25-02-12.15:39:17.678 [NettyServerWorker-6-1] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.15:40:42.553 [main            ] WARN  MetadataUtils          -  [DUBBO] Remote Metadata Report Server is not provided or unavailable, will stop registering service definition to remote center!, dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.15:41:13.053 [NettyServerWorker-6-1] WARN  ExchangeCodec          -  [DUBBO] Fail to encode response: Response [id=0, version=2.0.2, status=20, event=false, error=null, result=AppResponse [value=Response(code=0000, info=成功, data=ProductMarketResponseDTO(groupBuyTeams=[ProductMarketResponseDTO.Team(userId=y1, remainCount=1, teamId=46168757, startTime=Sun Feb 09 13:41:15 GMT+08:00 2025, endTime=Thu Feb 13 14:01:15 GMT+08:00 2025, validTimeCountdown=22:20:01)], teamStatistic=ProductMarketResponseDTO.TeamStatistic(deductionPrice=11.99, originalPrice=12.00, payPrice=0.01, participateCount=2, completeGroupCount=0, inProgressGroupCount=1))), exception=null]], send bad_response info instead, cause: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+ Java field: private cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic cn.ant0n.gbm.api.dto.ProductMarketResponseDTO.teamStatistic
+ Java field: private java.lang.Object cn.ant0n.gbm.api.response.Response.data, dubbo version: 3.0.9, current host: 192.168.10.118
+java.lang.RuntimeException: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+ Java field: private cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic cn.ant0n.gbm.api.dto.ProductMarketResponseDTO.teamStatistic
+ Java field: private java.lang.Object cn.ant0n.gbm.api.response.Response.data
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:304)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeInstance(JavaSerializer.java:284)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeObject(JavaSerializer.java:251)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:412)
+	at org.apache.dubbo.common.serialize.hessian2.Hessian2ObjectOutput.writeObject(Hessian2ObjectOutput.java:92)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboCodec.encodeResponseData(DubboCodec.java:225)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encodeResponse(ExchangeCodec.java:309)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:73)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboCountCodec.encode(DubboCountCodec.java:47)
+	at org.apache.dubbo.remoting.transport.netty4.NettyCodecAdapter$InternalEncoder.encode(NettyCodecAdapter.java:69)
+	at io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:881)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+	at io.netty.handler.timeout.IdleStateHandler.write(IdleStateHandler.java:302)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:879)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+	at io.netty.channel.ChannelDuplexHandler.write(ChannelDuplexHandler.java:115)
+	at org.apache.dubbo.remoting.transport.netty4.NettyServerHandler.write(NettyServerHandler.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:879)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:940)
+	at io.netty.channel.AbstractChannelHandlerContext$WriteTask.run(AbstractChannelHandlerContext.java:1247)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.RuntimeException: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+ Java field: private cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic cn.ant0n.gbm.api.dto.ProductMarketResponseDTO.teamStatistic
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:304)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeInstance(JavaSerializer.java:284)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeObject(JavaSerializer.java:251)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:412)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:302)
+	... 32 common frames omitted
+Caused by: java.lang.IllegalStateException: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getDefaultSerializer(SerializerFactory.java:417)
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getSerializer(SerializerFactory.java:391)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:411)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:302)
+	... 36 common frames omitted
+25-02-12.15:41:13.437 [NettyServerWorker-6-1] WARN  ExchangeCodec          -  [DUBBO] Fail to encode response: Response [id=1, version=2.0.2, status=20, event=false, error=null, result=AppResponse [value=Response(code=0000, info=成功, data=ProductMarketResponseDTO(groupBuyTeams=[ProductMarketResponseDTO.Team(userId=y1, remainCount=1, teamId=46168757, startTime=Sun Feb 09 13:41:15 GMT+08:00 2025, endTime=Thu Feb 13 14:01:15 GMT+08:00 2025, validTimeCountdown=22:20:01)], teamStatistic=ProductMarketResponseDTO.TeamStatistic(deductionPrice=11.99, originalPrice=12.00, payPrice=0.01, participateCount=2, completeGroupCount=0, inProgressGroupCount=1))), exception=null]], send bad_response info instead, cause: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+ Java field: private cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic cn.ant0n.gbm.api.dto.ProductMarketResponseDTO.teamStatistic
+ Java field: private java.lang.Object cn.ant0n.gbm.api.response.Response.data, dubbo version: 3.0.9, current host: 192.168.10.118
+java.lang.RuntimeException: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+ Java field: private cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic cn.ant0n.gbm.api.dto.ProductMarketResponseDTO.teamStatistic
+ Java field: private java.lang.Object cn.ant0n.gbm.api.response.Response.data
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:304)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeInstance(JavaSerializer.java:284)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeObject(JavaSerializer.java:251)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:412)
+	at org.apache.dubbo.common.serialize.hessian2.Hessian2ObjectOutput.writeObject(Hessian2ObjectOutput.java:92)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboCodec.encodeResponseData(DubboCodec.java:225)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encodeResponse(ExchangeCodec.java:309)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:73)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboCountCodec.encode(DubboCountCodec.java:47)
+	at org.apache.dubbo.remoting.transport.netty4.NettyCodecAdapter$InternalEncoder.encode(NettyCodecAdapter.java:69)
+	at io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:881)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+	at io.netty.handler.timeout.IdleStateHandler.write(IdleStateHandler.java:302)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:879)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+	at io.netty.channel.ChannelDuplexHandler.write(ChannelDuplexHandler.java:115)
+	at org.apache.dubbo.remoting.transport.netty4.NettyServerHandler.write(NettyServerHandler.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:879)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:940)
+	at io.netty.channel.AbstractChannelHandlerContext$WriteTask.run(AbstractChannelHandlerContext.java:1247)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.RuntimeException: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+ Java field: private cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic cn.ant0n.gbm.api.dto.ProductMarketResponseDTO.teamStatistic
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:304)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeInstance(JavaSerializer.java:284)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeObject(JavaSerializer.java:251)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:412)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:302)
+	... 32 common frames omitted
+Caused by: java.lang.IllegalStateException: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getDefaultSerializer(SerializerFactory.java:417)
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getSerializer(SerializerFactory.java:391)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:411)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:302)
+	... 36 common frames omitted
+25-02-12.15:41:13.810 [NettyServerWorker-6-1] WARN  ExchangeCodec          -  [DUBBO] Fail to encode response: Response [id=2, version=2.0.2, status=20, event=false, error=null, result=AppResponse [value=Response(code=0000, info=成功, data=ProductMarketResponseDTO(groupBuyTeams=[ProductMarketResponseDTO.Team(userId=y1, remainCount=1, teamId=46168757, startTime=Sun Feb 09 13:41:15 GMT+08:00 2025, endTime=Thu Feb 13 14:01:15 GMT+08:00 2025, validTimeCountdown=22:20:01)], teamStatistic=ProductMarketResponseDTO.TeamStatistic(deductionPrice=11.99, originalPrice=12.00, payPrice=0.01, participateCount=2, completeGroupCount=0, inProgressGroupCount=1))), exception=null]], send bad_response info instead, cause: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+ Java field: private cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic cn.ant0n.gbm.api.dto.ProductMarketResponseDTO.teamStatistic
+ Java field: private java.lang.Object cn.ant0n.gbm.api.response.Response.data, dubbo version: 3.0.9, current host: 192.168.10.118
+java.lang.RuntimeException: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+ Java field: private cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic cn.ant0n.gbm.api.dto.ProductMarketResponseDTO.teamStatistic
+ Java field: private java.lang.Object cn.ant0n.gbm.api.response.Response.data
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:304)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeInstance(JavaSerializer.java:284)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeObject(JavaSerializer.java:251)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:412)
+	at org.apache.dubbo.common.serialize.hessian2.Hessian2ObjectOutput.writeObject(Hessian2ObjectOutput.java:92)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboCodec.encodeResponseData(DubboCodec.java:225)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encodeResponse(ExchangeCodec.java:309)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:73)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboCountCodec.encode(DubboCountCodec.java:47)
+	at org.apache.dubbo.remoting.transport.netty4.NettyCodecAdapter$InternalEncoder.encode(NettyCodecAdapter.java:69)
+	at io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:881)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+	at io.netty.handler.timeout.IdleStateHandler.write(IdleStateHandler.java:302)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:879)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+	at io.netty.channel.ChannelDuplexHandler.write(ChannelDuplexHandler.java:115)
+	at org.apache.dubbo.remoting.transport.netty4.NettyServerHandler.write(NettyServerHandler.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:879)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:940)
+	at io.netty.channel.AbstractChannelHandlerContext$WriteTask.run(AbstractChannelHandlerContext.java:1247)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.RuntimeException: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+ Java field: private cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic cn.ant0n.gbm.api.dto.ProductMarketResponseDTO.teamStatistic
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:304)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeInstance(JavaSerializer.java:284)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer.writeObject(JavaSerializer.java:251)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:412)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:302)
+	... 32 common frames omitted
+Caused by: java.lang.IllegalStateException: Serialized class cn.ant0n.gbm.api.dto.ProductMarketResponseDTO$TeamStatistic must implement java.io.Serializable
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getDefaultSerializer(SerializerFactory.java:417)
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getSerializer(SerializerFactory.java:391)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:411)
+	at com.alibaba.com.caucho.hessian.io.JavaSerializer$FieldSerializer.serialize(JavaSerializer.java:302)
+	... 36 common frames omitted
+25-02-12.15:41:13.824 [NettyServerWorker-6-1] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.15:42:20.231 [main            ] WARN  MetadataUtils          -  [DUBBO] Remote Metadata Report Server is not provided or unavailable, will stop registering service definition to remote center!, dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.15:42:32.983 [NettyServerWorker-6-1] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.17:42:19.157 [main            ] WARN  MetadataUtils          -  [DUBBO] Remote Metadata Report Server is not provided or unavailable, will stop registering service definition to remote center!, dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.17:42:19.173 [main            ] WARN  MetadataUtils          -  [DUBBO] Remote Metadata Report Server is not provided or unavailable, will stop registering service definition to remote center!, dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.17:42:40.996 [NettyServerWorker-6-1] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.17:54:16.504 [main            ] WARN  MetadataUtils          -  [DUBBO] Remote Metadata Report Server is not provided or unavailable, will stop registering service definition to remote center!, dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.17:54:16.515 [main            ] WARN  MetadataUtils          -  [DUBBO] Remote Metadata Report Server is not provided or unavailable, will stop registering service definition to remote center!, dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.17:54:43.188 [NettyServerWorker-6-1] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.17:55:04.678 [NettyServerWorker-6-2] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.17:56:25.770 [NettyServerWorker-6-3] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.17:56:49.913 [NettyServerWorker-6-4] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.17:57:36.395 [NettyServerWorker-6-5] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.17:58:25.437 [NettyServerWorker-6-6] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.18:01:06.582 [main            ] WARN  MetadataUtils          -  [DUBBO] Remote Metadata Report Server is not provided or unavailable, will stop registering service definition to remote center!, dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.18:01:06.594 [main            ] WARN  MetadataUtils          -  [DUBBO] Remote Metadata Report Server is not provided or unavailable, will stop registering service definition to remote center!, dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.18:01:38.556 [NettyServerWorker-6-1] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.18:02:02.948 [DubboServerHandler-192.168.10.118:20881-thread-5] WARN  TradeRepository        - 拼团系统-该团已取消或者满员
+25-02-12.18:02:02.950 [DubboServerHandler-192.168.10.118:20881-thread-5] WARN  TradeRepository        - 拼团系统-锁定拼团单失败
+cn.ant0n.gbm.types.exception.AppException: null
+	at cn.ant0n.gbm.infrastructure.adapter.repository.TradeRepository.lambda$lockGroupBuyOrderSlave$1(TradeRepository.java:172)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at cn.ant0n.gbm.infrastructure.adapter.repository.TradeRepository.lockGroupBuyOrderSlave(TradeRepository.java:166)
+	at cn.ant0n.gbm.infrastructure.adapter.repository.TradeRepository$$FastClassBySpringCGLIB$$4c230d6c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at cn.ant0n.gbm.infrastructure.adapter.repository.TradeRepository$$EnhancerBySpringCGLIB$$87964389.lockGroupBuyOrderSlave(<generated>)
+	at cn.ant0n.gbm.domain.trade.service.TradeService.lockGroupBuyOrder(TradeService.java:33)
+	at cn.ant0n.gbm.trigger.rpc.GroupBuyTradeRpcService.groupBuyTrade(GroupBuyTradeRpcService.java:123)
+	at cn.ant0n.gbm.trigger.rpc.GroupBuyTradeRpcServiceDubboWrap1.invokeMethod(GroupBuyTradeRpcServiceDubboWrap1.java)
+	at org.apache.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:71)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:99)
+	at org.apache.dubbo.config.invoker.DelegateProviderMetaDataInvoker.invoke(DelegateProviderMetaDataInvoker.java:55)
+	at org.apache.dubbo.rpc.filter.ClassLoaderCallbackFilter.invoke(ClassLoaderCallbackFilter.java:38)
+	at org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:321)
+	at org.apache.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:77)
+	at org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:321)
+	at org.apache.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:46)
+	at org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:321)
+	at org.apache.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:99)
+	at org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:321)
+	at org.apache.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:52)
+	at org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:321)
+	at org.apache.dubbo.auth.filter.ProviderAuthFilter.invoke(ProviderAuthFilter.java:53)
+	at org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:321)
+	at org.apache.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:131)
+	at org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:321)
+	at org.apache.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:191)
+	at org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:321)
+	at org.apache.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:54)
+	at org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:321)
+	at org.apache.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:41)
+	at org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:321)
+	at org.apache.dubbo.rpc.filter.ProfilerServerFilter.invoke(ProfilerServerFilter.java:56)
+	at org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:321)
+	at org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CallbackRegistrationInvoker.invoke(FilterChainBuilder.java:193)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:148)
+	at org.apache.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:100)
+	at org.apache.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:175)
+	at org.apache.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:51)
+	at org.apache.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.dubbo.common.threadlocal.InternalRunnable.run(InternalRunnable.java:41)
+	at java.lang.Thread.run(Thread.java:750)
+25-02-12.18:02:03.102 [NettyServerWorker-6-2] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.18:02:17.954 [redisson-netty-2-2] ERROR ErrorsLoggingHandler   - Exception occured. Channel: [id: 0xa6539fc0, L:/192.168.10.118:56277 - R:117.72.40.102/117.72.40.102:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-02-12.18:06:01.439 [NettyServerWorker-6-3] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.18:06:26.173 [NettyServerWorker-6-4] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.18:07:57.476 [NettyServerWorker-6-5] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.18:08:47.362 [NettyServerWorker-6-6] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.18:10:01.188 [NettyServerWorker-6-7] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.18:13:47.536 [main            ] WARN  MetadataUtils          -  [DUBBO] Remote Metadata Report Server is not provided or unavailable, will stop registering service definition to remote center!, dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.18:13:47.546 [main            ] WARN  MetadataUtils          -  [DUBBO] Remote Metadata Report Server is not provided or unavailable, will stop registering service definition to remote center!, dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.18:14:12.079 [NettyServerWorker-6-1] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.18:15:59.434 [NettyServerWorker-6-2] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.18:17:10.773 [NettyServerWorker-6-3] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.18:21:53.247 [NettyServerWorker-6-4] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118
+25-02-12.18:25:06.791 [NettyServerWorker-6-5] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /192.168.10.118:20881. You can graceful shutdown now., dubbo version: 3.0.9, current host: 192.168.10.118

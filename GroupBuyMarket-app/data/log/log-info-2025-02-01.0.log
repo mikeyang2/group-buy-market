@@ -1,0 +1,95 @@
+25-02-01.12:31:15.322 [main            ] INFO  TradeTest              - Starting TradeTest using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 17248 (started by 杨晓灿 in E:\java_project\GroupBuyMarket\GroupBuyMarket-app)
+25-02-01.12:31:15.322 [main            ] INFO  TradeTest              - The following 1 profile is active: "dev"
+25-02-01.12:31:16.095 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-01.12:31:16.098 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-01.12:31:16.123 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+25-02-01.12:31:16.678 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$45c7a8ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-01.12:31:16.693 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-01.12:31:17.092 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-01.12:31:17.541 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-01.12:31:17.829 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-01.12:31:17.871 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-01.12:31:19.591 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-01.12:31:19.631 [main            ] INFO  TradeTest              - Started TradeTest in 4.653 seconds (JVM running for 5.446)
+25-02-01.12:31:20.014 [main            ] INFO  TradeTest              - 结果为:[]
+25-02-01.12:31:46.082 [main            ] INFO  TradeTest              - Starting TradeTest using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 10972 (started by 杨晓灿 in E:\java_project\GroupBuyMarket\GroupBuyMarket-app)
+25-02-01.12:31:46.083 [main            ] INFO  TradeTest              - The following 1 profile is active: "dev"
+25-02-01.12:31:46.764 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-01.12:31:46.764 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-01.12:31:46.793 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+25-02-01.12:31:47.292 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$874ee6b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-01.12:31:47.312 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-01.12:31:47.673 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-01.12:31:48.082 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-01.12:31:48.365 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-01.12:31:48.384 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-01.12:31:50.194 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-01.12:31:50.241 [main            ] INFO  TradeTest              - Started TradeTest in 4.49 seconds (JVM running for 5.595)
+25-02-01.12:31:58.913 [main            ] INFO  TradeTest              - 结果为:[]
+25-02-01.12:32:20.931 [main            ] INFO  TradeTest              - Starting TradeTest using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 10064 (started by 杨晓灿 in E:\java_project\GroupBuyMarket\GroupBuyMarket-app)
+25-02-01.12:32:20.932 [main            ] INFO  TradeTest              - The following 1 profile is active: "dev"
+25-02-01.12:32:21.592 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-01.12:32:21.592 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-01.12:32:21.622 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+25-02-01.12:32:22.079 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$45c7a8ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-01.12:32:22.094 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-01.12:32:22.449 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-01.12:32:22.842 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-01.12:32:23.133 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-01.12:32:23.162 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-01.12:32:24.805 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-01.12:32:24.842 [main            ] INFO  TradeTest              - Started TradeTest in 4.197 seconds (JVM running for 4.769)
+25-02-01.12:32:25.084 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-01.12:32:25.588 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-01.12:32:27.038 [main            ] INFO  TradeTest              - 结果为:[{"lockCount":0,"targetCount":3},{"lockCount":3,"targetCount":3},{"lockCount":3,"targetCount":3},{"lockCount":1,"targetCount":3},{"lockCount":1,"targetCount":3},{"lockCount":2,"targetCount":3}]
+25-02-01.12:32:27.052 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-02-01.12:32:27.070 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-02-01.12:32:39.482 [main            ] INFO  TradeTest              - Starting TradeTest using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 19696 (started by 杨晓灿 in E:\java_project\GroupBuyMarket\GroupBuyMarket-app)
+25-02-01.12:32:39.483 [main            ] INFO  TradeTest              - The following 1 profile is active: "dev"
+25-02-01.12:32:40.086 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-01.12:32:40.088 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-01.12:32:40.104 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+25-02-01.12:32:40.533 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$45c7a8ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-01.12:32:40.551 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-01.12:32:40.867 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-01.12:32:41.324 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-01.12:32:41.602 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-01.12:32:41.633 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-01.12:32:43.174 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-01.12:32:43.214 [main            ] INFO  TradeTest              - Started TradeTest in 3.992 seconds (JVM running for 4.539)
+25-02-01.12:32:44.165 [main            ] INFO  TradeTest              - 结果为:[{"lockCount":0,"targetCount":3},{"lockCount":3,"targetCount":3},{"lockCount":3,"targetCount":3},{"lockCount":1,"targetCount":3},{"lockCount":1,"targetCount":3},{"lockCount":2,"targetCount":3}]
+25-02-01.12:35:40.736 [main            ] INFO  TradeTest              - Starting TradeTest using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 23360 (started by 杨晓灿 in E:\java_project\GroupBuyMarket\GroupBuyMarket-app)
+25-02-01.12:35:40.736 [main            ] INFO  TradeTest              - The following 1 profile is active: "dev"
+25-02-01.12:35:41.414 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-01.12:35:41.421 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-01.12:35:41.442 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+25-02-01.12:35:41.873 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$a6e9ee38] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-01.12:35:41.884 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-01.12:35:42.223 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-01.12:35:42.602 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-01.12:35:42.891 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-01.12:35:42.912 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-01.12:35:44.505 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-01.12:35:44.543 [main            ] INFO  TradeTest              - Started TradeTest in 4.094 seconds (JVM running for 4.695)
+25-02-01.12:35:44.743 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-01.12:35:45.132 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-01.12:35:45.182 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-02-01.12:35:45.193 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-02-01.12:36:05.285 [main            ] INFO  TradeTest              - Starting TradeTest using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 14664 (started by 杨晓灿 in E:\java_project\GroupBuyMarket\GroupBuyMarket-app)
+25-02-01.12:36:05.286 [main            ] INFO  TradeTest              - The following 1 profile is active: "dev"
+25-02-01.12:36:05.872 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-01.12:36:05.872 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-01.12:36:05.892 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+25-02-01.12:36:06.297 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$9a6a09b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-01.12:36:06.311 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-01.12:36:06.666 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-01.12:36:07.044 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-01.12:36:07.324 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-01.12:36:07.354 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-01.12:36:08.883 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-01.12:36:08.914 [main            ] INFO  TradeTest              - Started TradeTest in 3.907 seconds (JVM running for 4.5)
+25-02-01.12:36:09.122 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-01.12:36:09.513 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-01.12:36:10.002 [main            ] INFO  TradeTest              - 结果为:{"31724477":{"lockCount":3,"targetCount":3,"teamId":"31724477"},"RNPZQnlL":{"lockCount":1,"targetCount":3,"teamId":"RNPZQnlL"},"tQvVMQWS":{"lockCount":1,"targetCount":3,"teamId":"tQvVMQWS"},"64451200":{"lockCount":2,"targetCount":3,"teamId":"64451200"},"64675056":{"lockCount":0,"targetCount":3,"teamId":"64675056"},"33063446":{"lockCount":3,"targetCount":3,"teamId":"33063446"}}
+25-02-01.12:36:10.012 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-02-01.12:36:10.027 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

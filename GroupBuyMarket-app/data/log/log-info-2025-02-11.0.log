@@ -1,0 +1,43 @@
+25-02-11.12:03:59.200 [main            ] INFO  ApiTest                - Starting ApiTest using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 25324 (started by 杨晓灿 in E:\java_project\GroupBuyMarket\GroupBuyMarket-app)
+25-02-11.12:03:59.200 [main            ] INFO  ApiTest                - The following 1 profile is active: "dev"
+25-02-11.12:03:59.216 [background-preinit] INFO  Version                - HV000001: Hibernate Validator 6.2.5.Final
+25-02-11.12:04:00.077 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-11.12:04:00.093 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-11.12:04:00.125 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+25-02-11.12:04:00.722 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$4738f1d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-11.12:04:00.753 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-11.12:04:01.124 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-11.12:04:01.549 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-11.12:04:01.834 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-11.12:04:01.881 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-11.12:04:05.169 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-11.12:04:06.051 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-11.12:04:06.051 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyOrderDelayListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+25-02-11.12:04:06.466 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-11.12:04:06.466 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyMarketSuccessListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_2
+25-02-11.12:04:06.493 [main            ] INFO  ApiTest                - Started ApiTest in 7.638 seconds (JVM running for 9.026)
+25-02-11.12:04:13.470 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-11.12:04:16.400 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-11.12:05:46.146 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s321ms908µs700ns).
+25-02-11.12:05:46.152 [main            ] INFO  ApiTest                - 结果为:[{"endTime":1739253675000,"remainCount":1,"startTime":1739079675000,"teamId":"46168757","userId":"y2","validTimeCountdown":"00:20:00"},{"endTime":1739253675000,"remainCount":1,"startTime":1739079675000,"teamId":"46168757","userId":"y1","validTimeCountdown":"00:20:00"}]
+25-02-11.12:07:51.327 [main            ] INFO  ApiTest                - Starting ApiTest using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 14860 (started by 杨晓灿 in E:\java_project\GroupBuyMarket\GroupBuyMarket-app)
+25-02-11.12:07:51.327 [main            ] INFO  ApiTest                - The following 1 profile is active: "dev"
+25-02-11.12:07:51.327 [background-preinit] INFO  Version                - HV000001: Hibernate Validator 6.2.5.Final
+25-02-11.12:07:52.065 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-11.12:07:52.065 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-11.12:07:52.097 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+25-02-11.12:07:52.599 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$939b59a2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-11.12:07:52.616 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-11.12:07:53.016 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-11.12:07:53.467 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-11.12:07:53.747 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-11.12:07:53.786 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-11.12:07:58.820 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-11.12:07:59.828 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-11.12:07:59.828 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyOrderDelayListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+25-02-11.12:08:00.685 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-11.12:08:00.685 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyMarketSuccessListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_2
+25-02-11.12:08:00.711 [main            ] INFO  ApiTest                - Started ApiTest in 9.701 seconds (JVM running for 10.469)
+25-02-11.12:08:03.473 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-11.12:08:06.410 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-11.12:08:18.311 [main            ] INFO  ApiTest                - 结果为:{"completeGroupCount":0,"inProgressGroupCount":1,"participateCount":2}

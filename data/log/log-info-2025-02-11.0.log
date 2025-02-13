@@ -1,0 +1,55 @@
+25-02-11.12:10:12.903 [background-preinit] INFO  Version                - HV000001: Hibernate Validator 6.2.5.Final
+25-02-11.12:10:12.903 [main            ] INFO  Application            - Starting Application using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 1648 (E:\java_project\GroupBuyMarket\GroupBuyMarket-app\target\classes started by 杨晓灿 in E:\java_project\GroupBuyMarket)
+25-02-11.12:10:12.903 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-02-11.12:10:13.531 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-11.12:10:13.531 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-11.12:10:13.562 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+25-02-11.12:10:13.769 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$6af2a19] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-11.12:10:13.769 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-11.12:10:13.925 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-11.12:10:14.270 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-11.12:10:14.559 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-11.12:10:14.600 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-11.12:10:14.772 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8092 (http)
+25-02-11.12:10:14.781 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8092"]
+25-02-11.12:10:14.781 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-02-11.12:10:14.781 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-02-11.12:10:14.866 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-02-11.12:10:14.866 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1931 ms
+25-02-11.12:10:16.879 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-11.12:10:17.585 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-11.12:10:17.585 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyOrderDelayListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+25-02-11.12:10:18.013 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-11.12:10:18.013 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyMarketSuccessListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_2
+25-02-11.12:10:18.026 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8092"]
+25-02-11.12:10:18.044 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8092 (http) with context path ''
+25-02-11.12:10:18.056 [main            ] INFO  Application            - Started Application in 5.408 seconds (JVM running for 6.069)
+25-02-11.12:10:18.281 [RMI TCP Connection(1)-192.168.10.117] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-02-11.12:10:18.281 [RMI TCP Connection(1)-192.168.10.117] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-02-11.12:10:18.282 [RMI TCP Connection(1)-192.168.10.117] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-02-11.12:10:18.475 [RMI TCP Connection(3)-192.168.10.117] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-11.12:10:18.768 [RMI TCP Connection(3)-192.168.10.117] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-11.12:10:30.111 [http-nio-8092-exec-1] INFO  RootNode               - ROOT节点
+25-02-11.12:10:30.111 [http-nio-8092-exec-1] INFO  SwitchNode             - SWITCH节点
+25-02-11.12:10:30.111 [http-nio-8092-exec-1] INFO  SwitchNode             - 拼团系统-活动正常,未降级
+25-02-11.12:10:30.172 [http-nio-8092-exec-1] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode:userId:y3, 异步多线程加载数据【ProductSkuVO, GroupBuyActivityDiscountV】完成
+25-02-11.12:10:30.172 [http-nio-8092-exec-1] INFO  MarketNode             - MARKET节点
+25-02-11.12:10:30.172 [http-nio-8092-exec-1] INFO  MJCalculateService     - 折扣策略计算-策略:MJ
+25-02-11.12:10:30.172 [http-nio-8092-exec-1] INFO  MarketNode             - 折扣价格为:11.99
+25-02-11.12:10:30.209 [http-nio-8092-exec-1] INFO  EndNode                - 拼团商品查询试算服务-动态上下文查询测试, ProductSkuVO:ProductSkuVO(productId=1001, productName=测试商品, price=12.00), GroupBuyActivityDiscountV:GroupBuyActivityDiscountVO(activityId=100301, activityName=测试拼团活动, source=s01, channel=c01, productId=1001, groupBuyDiscount=GroupBuyActivityDiscountVO.GroupBuyDiscount(discountName=满减优惠100-10元, discountDesc=满减优惠100-10元, discountType=TAG, discountPlan=MJ, discountExpr=10,12, tagId=666666), groupType=AUTO, takeLimitCount=2, target=3, validTime=20, status=ENABLE, startTime=Tue Jan 02 06:05:24 GMT+08:00 2024, endTime=Fri Mar 28 06:05:34 GMT+08:00 2025, tagId=1, tagScope=1)
+25-02-11.12:11:11.321 [http-nio-8092-exec-2] INFO  RootNode               - ROOT节点
+25-02-11.12:11:11.321 [http-nio-8092-exec-2] INFO  SwitchNode             - SWITCH节点
+25-02-11.12:11:11.321 [http-nio-8092-exec-2] INFO  SwitchNode             - 拼团系统-活动正常,未降级
+25-02-11.12:11:11.363 [http-nio-8092-exec-2] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode:userId:y1, 异步多线程加载数据【ProductSkuVO, GroupBuyActivityDiscountV】完成
+25-02-11.12:11:11.363 [http-nio-8092-exec-2] INFO  MarketNode             - MARKET节点
+25-02-11.12:11:11.363 [http-nio-8092-exec-2] INFO  MJCalculateService     - 折扣策略计算-策略:MJ
+25-02-11.12:11:11.363 [http-nio-8092-exec-2] INFO  MarketNode             - 折扣价格为:11.99
+25-02-11.12:11:11.406 [http-nio-8092-exec-2] INFO  EndNode                - 拼团商品查询试算服务-动态上下文查询测试, ProductSkuVO:ProductSkuVO(productId=1001, productName=测试商品, price=12.00), GroupBuyActivityDiscountV:GroupBuyActivityDiscountVO(activityId=100301, activityName=测试拼团活动, source=s01, channel=c01, productId=1001, groupBuyDiscount=GroupBuyActivityDiscountVO.GroupBuyDiscount(discountName=满减优惠100-10元, discountDesc=满减优惠100-10元, discountType=TAG, discountPlan=MJ, discountExpr=10,12, tagId=666666), groupType=AUTO, takeLimitCount=2, target=3, validTime=20, status=ENABLE, startTime=Tue Jan 02 06:05:24 GMT+08:00 2024, endTime=Fri Mar 28 06:05:34 GMT+08:00 2025, tagId=1, tagScope=1)
+25-02-11.12:11:21.980 [http-nio-8092-exec-5] INFO  RootNode               - ROOT节点
+25-02-11.12:11:21.980 [http-nio-8092-exec-5] INFO  SwitchNode             - SWITCH节点
+25-02-11.12:11:21.980 [http-nio-8092-exec-5] INFO  SwitchNode             - 拼团系统-活动正常,未降级
+25-02-11.12:11:22.019 [http-nio-8092-exec-5] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode:userId:y2, 异步多线程加载数据【ProductSkuVO, GroupBuyActivityDiscountV】完成
+25-02-11.12:11:22.019 [http-nio-8092-exec-5] INFO  MarketNode             - MARKET节点
+25-02-11.12:11:22.019 [http-nio-8092-exec-5] INFO  MJCalculateService     - 折扣策略计算-策略:MJ
+25-02-11.12:11:22.019 [http-nio-8092-exec-5] INFO  MarketNode             - 折扣价格为:11.99
+25-02-11.12:11:22.060 [http-nio-8092-exec-5] INFO  EndNode                - 拼团商品查询试算服务-动态上下文查询测试, ProductSkuVO:ProductSkuVO(productId=1001, productName=测试商品, price=12.00), GroupBuyActivityDiscountV:GroupBuyActivityDiscountVO(activityId=100301, activityName=测试拼团活动, source=s01, channel=c01, productId=1001, groupBuyDiscount=GroupBuyActivityDiscountVO.GroupBuyDiscount(discountName=满减优惠100-10元, discountDesc=满减优惠100-10元, discountType=TAG, discountPlan=MJ, discountExpr=10,12, tagId=666666), groupType=AUTO, takeLimitCount=2, target=3, validTime=20, status=ENABLE, startTime=Tue Jan 02 06:05:24 GMT+08:00 2024, endTime=Fri Mar 28 06:05:34 GMT+08:00 2025, tagId=1, tagScope=1)

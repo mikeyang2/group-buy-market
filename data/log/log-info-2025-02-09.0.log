@@ -1,0 +1,240 @@
+25-02-09.13:38:38.386 [background-preinit] INFO  Version                - HV000001: Hibernate Validator 6.2.5.Final
+25-02-09.13:38:38.386 [main            ] INFO  Application            - Starting Application using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 10724 (E:\java_project\GroupBuyMarket\GroupBuyMarket-app\target\classes started by 杨晓灿 in E:\java_project\GroupBuyMarket)
+25-02-09.13:38:38.386 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-02-09.13:38:39.405 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-09.13:38:39.407 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-09.13:38:39.453 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+25-02-09.13:38:39.761 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$d200b92] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:38:39.774 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:38:39.967 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-09.13:38:40.369 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.13:38:40.650 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.13:38:40.711 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:38:40.872 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8092 (http)
+25-02-09.13:38:40.879 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8092"]
+25-02-09.13:38:40.880 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-02-09.13:38:40.880 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-02-09.13:38:40.983 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-02-09.13:38:40.983 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2565 ms
+25-02-09.13:38:43.049 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-09.13:38:43.840 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:38:43.840 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyOrderDelayListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+25-02-09.13:38:44.205 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:38:44.205 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyMarketSuccessListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_2
+25-02-09.13:38:44.218 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8092"]
+25-02-09.13:38:44.227 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8092 (http) with context path ''
+25-02-09.13:38:44.236 [main            ] INFO  Application            - Started Application in 6.21 seconds (JVM running for 6.814)
+25-02-09.13:38:44.743 [RMI TCP Connection(1)-192.168.10.123] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-02-09.13:38:44.743 [RMI TCP Connection(1)-192.168.10.123] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-02-09.13:38:44.744 [RMI TCP Connection(2)-192.168.10.123] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-09.13:38:44.744 [RMI TCP Connection(1)-192.168.10.123] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-02-09.13:38:45.154 [RMI TCP Connection(2)-192.168.10.123] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-09.13:41:15.168 [http-nio-8092-exec-2] INFO  RootNode               - ROOT节点
+25-02-09.13:41:15.168 [http-nio-8092-exec-2] INFO  SwitchNode             - SWITCH节点
+25-02-09.13:41:15.168 [http-nio-8092-exec-2] INFO  SwitchNode             - 拼团系统-活动正常,未降级
+25-02-09.13:41:15.215 [http-nio-8092-exec-2] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode:userId:y1, 异步多线程加载数据【ProductSkuVO, GroupBuyActivityDiscountV】完成
+25-02-09.13:41:15.215 [http-nio-8092-exec-2] INFO  MarketNode             - MARKET节点
+25-02-09.13:41:15.215 [http-nio-8092-exec-2] INFO  MJCalculateService     - 折扣策略计算-策略:MJ
+25-02-09.13:41:15.215 [http-nio-8092-exec-2] INFO  MarketNode             - 折扣价格为:11.99
+25-02-09.13:41:15.295 [http-nio-8092-exec-2] INFO  EndNode                - 拼团商品查询试算服务-动态上下文查询测试, ProductSkuVO:ProductSkuVO(productId=1001, productName=测试商品, price=12.00), GroupBuyActivityDiscountV:GroupBuyActivityDiscountVO(activityId=100301, activityName=测试拼团活动, source=s01, channel=c01, productId=1001, groupBuyDiscount=GroupBuyActivityDiscountVO.GroupBuyDiscount(discountName=满减优惠100-10元, discountDesc=满减优惠100-10元, discountType=TAG, discountPlan=MJ, discountExpr=10,12, tagId=666666), groupType=AUTO, takeLimitCount=2, target=3, validTime=20, status=ENABLE, startTime=Tue Jan 02 06:05:24 GMT+08:00 2024, endTime=Fri Mar 28 06:05:34 GMT+08:00 2025, tagId=1, tagScope=1)
+25-02-09.13:42:38.989 [http-nio-8092-exec-3] INFO  RootNode               - ROOT节点
+25-02-09.13:42:38.990 [http-nio-8092-exec-3] INFO  SwitchNode             - SWITCH节点
+25-02-09.13:42:38.990 [http-nio-8092-exec-3] INFO  SwitchNode             - 拼团系统-活动正常,未降级
+25-02-09.13:42:39.027 [http-nio-8092-exec-3] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode:userId:y2, 异步多线程加载数据【ProductSkuVO, GroupBuyActivityDiscountV】完成
+25-02-09.13:42:39.027 [http-nio-8092-exec-3] INFO  MarketNode             - MARKET节点
+25-02-09.13:42:39.027 [http-nio-8092-exec-3] INFO  MJCalculateService     - 折扣策略计算-策略:MJ
+25-02-09.13:42:39.027 [http-nio-8092-exec-3] INFO  MarketNode             - 折扣价格为:11.99
+25-02-09.13:42:39.068 [http-nio-8092-exec-3] INFO  EndNode                - 拼团商品查询试算服务-动态上下文查询测试, ProductSkuVO:ProductSkuVO(productId=1001, productName=测试商品, price=12.00), GroupBuyActivityDiscountV:GroupBuyActivityDiscountVO(activityId=100301, activityName=测试拼团活动, source=s01, channel=c01, productId=1001, groupBuyDiscount=GroupBuyActivityDiscountVO.GroupBuyDiscount(discountName=满减优惠100-10元, discountDesc=满减优惠100-10元, discountType=TAG, discountPlan=MJ, discountExpr=10,12, tagId=666666), groupType=AUTO, takeLimitCount=2, target=3, validTime=20, status=ENABLE, startTime=Tue Jan 02 06:05:24 GMT+08:00 2024, endTime=Fri Mar 28 06:05:34 GMT+08:00 2025, tagId=1, tagScope=1)
+25-02-09.13:42:51.296 [http-nio-8092-exec-5] INFO  RootNode               - ROOT节点
+25-02-09.13:42:51.296 [http-nio-8092-exec-5] INFO  SwitchNode             - SWITCH节点
+25-02-09.13:42:51.296 [http-nio-8092-exec-5] INFO  SwitchNode             - 拼团系统-活动正常,未降级
+25-02-09.13:42:51.341 [http-nio-8092-exec-5] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode:userId:y3, 异步多线程加载数据【ProductSkuVO, GroupBuyActivityDiscountV】完成
+25-02-09.13:42:51.341 [http-nio-8092-exec-5] INFO  MarketNode             - MARKET节点
+25-02-09.13:42:51.341 [http-nio-8092-exec-5] INFO  MJCalculateService     - 折扣策略计算-策略:MJ
+25-02-09.13:42:51.341 [http-nio-8092-exec-5] INFO  MarketNode             - 折扣价格为:11.99
+25-02-09.13:42:51.377 [http-nio-8092-exec-5] INFO  EndNode                - 拼团商品查询试算服务-动态上下文查询测试, ProductSkuVO:ProductSkuVO(productId=1001, productName=测试商品, price=12.00), GroupBuyActivityDiscountV:GroupBuyActivityDiscountVO(activityId=100301, activityName=测试拼团活动, source=s01, channel=c01, productId=1001, groupBuyDiscount=GroupBuyActivityDiscountVO.GroupBuyDiscount(discountName=满减优惠100-10元, discountDesc=满减优惠100-10元, discountType=TAG, discountPlan=MJ, discountExpr=10,12, tagId=666666), groupType=AUTO, takeLimitCount=2, target=3, validTime=20, status=ENABLE, startTime=Tue Jan 02 06:05:24 GMT+08:00 2024, endTime=Fri Mar 28 06:05:34 GMT+08:00 2025, tagId=1, tagScope=1)
+25-02-09.13:43:00.030 [http-nio-8092-exec-7] INFO  RootNode               - ROOT节点
+25-02-09.13:43:00.030 [http-nio-8092-exec-7] INFO  SwitchNode             - SWITCH节点
+25-02-09.13:43:00.030 [http-nio-8092-exec-7] INFO  SwitchNode             - 拼团系统-活动正常,未降级
+25-02-09.13:43:00.073 [http-nio-8092-exec-7] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode:userId:y4, 异步多线程加载数据【ProductSkuVO, GroupBuyActivityDiscountV】完成
+25-02-09.13:43:00.073 [http-nio-8092-exec-7] INFO  MarketNode             - MARKET节点
+25-02-09.13:43:00.073 [http-nio-8092-exec-7] INFO  MJCalculateService     - 折扣策略计算-策略:MJ
+25-02-09.13:43:00.073 [http-nio-8092-exec-7] INFO  MarketNode             - 折扣价格为:11.99
+25-02-09.13:43:00.112 [http-nio-8092-exec-7] INFO  EndNode                - 拼团商品查询试算服务-动态上下文查询测试, ProductSkuVO:ProductSkuVO(productId=1001, productName=测试商品, price=12.00), GroupBuyActivityDiscountV:GroupBuyActivityDiscountVO(activityId=100301, activityName=测试拼团活动, source=s01, channel=c01, productId=1001, groupBuyDiscount=GroupBuyActivityDiscountVO.GroupBuyDiscount(discountName=满减优惠100-10元, discountDesc=满减优惠100-10元, discountType=TAG, discountPlan=MJ, discountExpr=10,12, tagId=666666), groupType=AUTO, takeLimitCount=2, target=3, validTime=20, status=ENABLE, startTime=Tue Jan 02 06:05:24 GMT+08:00 2024, endTime=Fri Mar 28 06:05:34 GMT+08:00 2025, tagId=1, tagScope=1)
+25-02-09.13:43:00.114 [http-nio-8092-exec-7] WARN  TradeRepository        - 拼团系统-该团已取消或者满员
+25-02-09.13:43:00.128 [http-nio-8092-exec-7] WARN  TradeRepository        - 拼团系统-锁定拼团单失败
+cn.ant0n.gbm.types.exception.AppException: null
+	at cn.ant0n.gbm.infrastructure.adapter.repository.TradeRepository.lambda$lockGroupBuyOrderSlave$1(TradeRepository.java:169)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at cn.ant0n.gbm.infrastructure.adapter.repository.TradeRepository.lockGroupBuyOrderSlave(TradeRepository.java:163)
+	at cn.ant0n.gbm.infrastructure.adapter.repository.TradeRepository$$FastClassBySpringCGLIB$$4c230d6c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at cn.ant0n.gbm.infrastructure.adapter.repository.TradeRepository$$EnhancerBySpringCGLIB$$f5c78caa.lockGroupBuyOrderSlave(<generated>)
+	at cn.ant0n.gbm.domain.trade.service.TradeService.lockGroupBuyOrder(TradeService.java:33)
+	at cn.ant0n.gbm.trigger.http.TradeController.groupBuyTrade(TradeController.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+25-02-09.13:43:00.132 [http-nio-8092-exec-7] INFO  TradeController        - 错误
+cn.ant0n.gbm.types.exception.AppException: null
+	at cn.ant0n.gbm.infrastructure.adapter.repository.TradeRepository.lambda$lockGroupBuyOrderSlave$1(TradeRepository.java:176)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at cn.ant0n.gbm.infrastructure.adapter.repository.TradeRepository.lockGroupBuyOrderSlave(TradeRepository.java:163)
+	at cn.ant0n.gbm.infrastructure.adapter.repository.TradeRepository$$FastClassBySpringCGLIB$$4c230d6c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at cn.ant0n.gbm.infrastructure.adapter.repository.TradeRepository$$EnhancerBySpringCGLIB$$f5c78caa.lockGroupBuyOrderSlave(<generated>)
+	at cn.ant0n.gbm.domain.trade.service.TradeService.lockGroupBuyOrder(TradeService.java:33)
+	at cn.ant0n.gbm.trigger.http.TradeController.groupBuyTrade(TradeController.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+25-02-09.13:50:29.266 [background-preinit] INFO  Version                - HV000001: Hibernate Validator 6.2.5.Final
+25-02-09.13:50:29.269 [main            ] INFO  Application            - Starting Application using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 28136 (E:\java_project\GroupBuyMarket\GroupBuyMarket-app\target\classes started by 杨晓灿 in E:\java_project\GroupBuyMarket)
+25-02-09.13:50:29.270 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-02-09.13:50:29.888 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-09.13:50:29.890 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-09.13:50:29.912 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+25-02-09.13:50:30.111 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$b7b3a1ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:50:30.132 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:50:30.278 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-09.13:50:30.887 [redisson-netty-2-12] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.13:50:30.923 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.13:50:30.962 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:50:31.093 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8092 (http)
+25-02-09.13:50:31.099 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8092"]
+25-02-09.13:50:31.099 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-02-09.13:50:31.099 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-02-09.13:50:31.180 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-02-09.13:50:31.180 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1882 ms
+25-02-09.13:50:33.128 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-09.13:50:34.885 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:50:34.885 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyOrderDelayListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+25-02-09.13:50:35.255 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:50:35.255 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyMarketSuccessListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_2
+25-02-09.13:50:35.268 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8092"]
+25-02-09.13:50:35.276 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8092 (http) with context path ''
+25-02-09.13:50:35.286 [main            ] INFO  Application            - Started Application in 6.334 seconds (JVM running for 6.808)
+25-02-09.13:50:35.407 [ConsumeMessageThread_1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-09.13:50:35.694 [ConsumeMessageThread_1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-09.13:50:35.722 [ConsumeMessageThread_1] INFO  TradeOrderDelayNotifyService - 拼团交易-团:46168757未完成目标拼单...
+25-02-09.13:50:35.742 [ConsumeMessageThread_1] INFO  EventPublisher         - 发送MQ消息 topic:GroupBuyOrderCancelEvent message:{"data":{"refundItems":[{"userId":"y1"},{"userId":"y2"}]},"id":"270352439338","timestamp":"2025-02-09 13:50:35.737"}
+25-02-09.13:50:35.868 [ConsumeMessageThread_1] INFO  GroupBuyOrderDelayListener - 拼团交易-发送退款消息成功!
+25-02-09.13:50:36.014 [RMI TCP Connection(3)-192.168.10.123] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-02-09.13:50:36.014 [RMI TCP Connection(3)-192.168.10.123] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-02-09.13:50:36.015 [RMI TCP Connection(3)-192.168.10.123] INFO  DispatcherServlet      - Completed initialization in 1 ms

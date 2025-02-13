@@ -1,0 +1,431 @@
+25-02-09.11:28:38.888 [main            ] INFO  ApiTest                - Starting ApiTest using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 12512 (started by 杨晓灿 in E:\java_project\GroupBuyMarket\GroupBuyMarket-app)
+25-02-09.11:28:38.889 [main            ] INFO  ApiTest                - The following 1 profile is active: "dev"
+25-02-09.11:28:38.903 [background-preinit] INFO  Version                - HV000001: Hibernate Validator 6.2.5.Final
+25-02-09.11:28:39.926 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-09.11:28:39.929 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-09.11:28:39.972 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+25-02-09.11:28:40.592 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$f6dd87a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.11:28:40.609 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.11:28:41.046 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-09.11:28:41.516 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.11:28:41.793 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.11:28:41.828 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.11:28:44.996 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-09.11:28:45.816 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.11:28:45.816 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyOrderDelayListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+25-02-09.11:28:46.346 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.11:28:46.346 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyMarketSuccessListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_2
+25-02-09.11:28:46.360 [main            ] INFO  ApiTest                - Started ApiTest in 7.932 seconds (JVM running for 8.883)
+25-02-09.11:28:46.586 [main            ] INFO  EventPublisher         - 发送MQ延迟消息 topic:GroupBuyOrderDelayEvent message:{"data":"48354276","id":"131526055309","timestamp":"2025-02-09 11:28:46.576"}
+25-02-09.11:28:47.236 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.11:28:47.236 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.11:28:47.278 [SpringApplicationShutdownHook] INFO  DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.11:28:47.278 [SpringApplicationShutdownHook] INFO  DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.11:28:47.358 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.11:28:47.358 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.11:28:47.696 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.11:28:47.696 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.11:29:53.448 [main            ] INFO  ApiTest                - Starting ApiTest using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 25888 (started by 杨晓灿 in E:\java_project\GroupBuyMarket\GroupBuyMarket-app)
+25-02-09.11:29:53.449 [main            ] INFO  ApiTest                - The following 1 profile is active: "dev"
+25-02-09.11:29:53.459 [background-preinit] INFO  Version                - HV000001: Hibernate Validator 6.2.5.Final
+25-02-09.11:29:54.339 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-09.11:29:54.344 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-09.11:29:54.390 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
+25-02-09.11:29:55.024 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$781e096d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.11:29:55.046 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.11:29:55.496 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-09.11:29:55.926 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.11:29:56.212 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.11:29:56.263 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.11:29:59.236 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-09.11:30:00.146 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.11:30:00.147 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyOrderDelayListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+25-02-09.11:30:00.616 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.11:30:00.616 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyMarketSuccessListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_2
+25-02-09.11:30:00.636 [main            ] INFO  ApiTest                - Started ApiTest in 7.561 seconds (JVM running for 8.406)
+25-02-09.11:30:00.834 [main            ] INFO  EventPublisher         - 发送MQ延迟消息 topic:GroupBuyOrderDelayEvent message:{"data":"48354276","id":"608018738423","timestamp":"2025-02-09 11:30:00.826"}
+25-02-09.11:30:00.911 [ConsumeMessageThread_1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-09.11:30:01.390 [ConsumeMessageThread_1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-09.11:30:01.422 [ConsumeMessageThread_1] INFO  TradeOrderDelayNotifyService - 拼团交易-团:48354276未完成目标拼单...
+25-02-09.11:30:01.422 [ConsumeMessageThread_1] INFO  GroupBuyOrderDelayListener - 拼团交易-已退款!
+25-02-09.11:31:01.035 [ConsumeMessageThread_2] INFO  TradeOrderDelayNotifyService - 拼团交易-团:48354276未完成目标拼单...
+25-02-09.11:31:01.035 [ConsumeMessageThread_2] INFO  GroupBuyOrderDelayListener - 拼团交易-已退款!
+25-02-09.12:31:19.829 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.12:31:19.830 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.12:31:19.830 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.12:31:19.830 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.12:31:20.180 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.12:31:20.180 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.12:31:20.180 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.12:31:20.180 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.12:31:21.981 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.12:31:21.981 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.12:31:39.554 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.12:31:39.554 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.12:31:39.554 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.12:31:39.600 [redisson-netty-2-8] ERROR ErrorsLoggingHandler   - Exception occured. Channel: [id: 0xf4acb352, L:/192.168.10.123:61386 - R:117.72.40.102/117.72.40.102:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-02-09.12:31:39.600 [redisson-netty-2-5] ERROR ErrorsLoggingHandler   - Exception occured. Channel: [id: 0x98156997, L:/192.168.10.123:61385 - R:117.72.40.102/117.72.40.102:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-02-09.12:31:39.600 [redisson-netty-2-12] ERROR ErrorsLoggingHandler   - Exception occured. Channel: [id: 0x5f35f120, L:/192.168.10.123:61388 - R:117.72.40.102/117.72.40.102:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-02-09.12:31:39.600 [redisson-netty-2-10] ERROR ErrorsLoggingHandler   - Exception occured. Channel: [id: 0x82837016, L:/192.168.10.123:61387 - R:117.72.40.102/117.72.40.102:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-02-09.12:31:39.600 [redisson-netty-2-3] ERROR ErrorsLoggingHandler   - Exception occured. Channel: [id: 0xe27ae5c1, L:/192.168.10.123:61384 - R:117.72.40.102/117.72.40.102:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-02-09.12:31:39.600 [redisson-netty-2-2] ERROR ErrorsLoggingHandler   - Exception occured. Channel: [id: 0x0995f0ee, L:/192.168.10.123:61383 - R:117.72.40.102/117.72.40.102:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-02-09.12:31:43.850 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46m12s121ms241µs900ns).
+25-02-09.12:32:37.432 [main            ] INFO  ApiTest                - Starting ApiTest using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 15520 (started by 杨晓灿 in E:\java_project\GroupBuyMarket\GroupBuyMarket-app)
+25-02-09.12:32:37.432 [main            ] INFO  ApiTest                - The following 1 profile is active: "dev"
+25-02-09.12:32:37.448 [background-preinit] INFO  Version                - HV000001: Hibernate Validator 6.2.5.Final
+25-02-09.12:32:38.169 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-09.12:32:38.169 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-09.12:32:38.200 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+25-02-09.12:32:38.671 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$1ee85216] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.12:32:38.686 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.12:32:39.093 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-09.12:32:39.594 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.12:32:39.907 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.12:32:39.954 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.12:32:42.851 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-09.12:32:44.019 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.12:32:44.019 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyOrderDelayListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+25-02-09.12:32:44.476 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.12:32:44.476 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyMarketSuccessListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_2
+25-02-09.12:32:44.491 [main            ] INFO  ApiTest                - Started ApiTest in 7.327 seconds (JVM running for 26.247)
+25-02-09.12:32:44.710 [main            ] INFO  EventPublisher         - 发送MQ延迟消息 topic:GroupBuyOrderDelayEvent message:{"data":"48354276","id":"774315420628","timestamp":"2025-02-09 12:32:44.698"}
+25-02-09.12:33:45.229 [ConsumeMessageThread_1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-09.12:33:45.669 [ConsumeMessageThread_1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-09.12:33:45.720 [ConsumeMessageThread_1] INFO  TradeOrderDelayNotifyService - 拼团交易-团:48354276未完成目标拼单...
+25-02-09.12:33:45.720 [ConsumeMessageThread_1] INFO  GroupBuyOrderDelayListener - 拼团交易-已退款!
+25-02-09.12:41:26.653 [main            ] INFO  ApiTest                - Starting ApiTest using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 26072 (started by 杨晓灿 in E:\java_project\GroupBuyMarket\GroupBuyMarket-app)
+25-02-09.12:41:26.653 [main            ] INFO  ApiTest                - The following 1 profile is active: "dev"
+25-02-09.12:41:26.660 [background-preinit] INFO  Version                - HV000001: Hibernate Validator 6.2.5.Final
+25-02-09.12:41:36.583 [main            ] INFO  ApiTest                - Starting ApiTest using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 19516 (started by 杨晓灿 in E:\java_project\GroupBuyMarket\GroupBuyMarket-app)
+25-02-09.12:41:36.583 [main            ] INFO  ApiTest                - The following 1 profile is active: "dev"
+25-02-09.12:41:36.590 [background-preinit] INFO  Version                - HV000001: Hibernate Validator 6.2.5.Final
+25-02-09.12:41:37.300 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-09.12:41:37.300 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-09.12:41:37.330 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+25-02-09.12:41:37.780 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$50864af8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.12:41:37.796 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.12:41:38.176 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-09.12:41:38.600 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.12:41:38.897 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.12:41:38.925 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.12:41:42.081 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-09.12:41:43.021 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.12:41:43.021 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyOrderDelayListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+25-02-09.12:41:43.460 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.12:41:43.460 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyMarketSuccessListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_2
+25-02-09.12:41:43.480 [main            ] INFO  ApiTest                - Started ApiTest in 7.169 seconds (JVM running for 7.726)
+25-02-09.12:41:43.646 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:GroupBuyOrderDelayEvent message:{"data":{"orderId":"48354276","userId":"123"},"id":"170849060348","timestamp":"2025-02-09 12:41:43.635"}
+25-02-09.12:41:44.164 [ConsumeMessageThread_1] INFO  GroupBuyOrderDelayListener - 拼团交易-已退款!, userId:123, orderId:48354276
+25-02-09.13:43:43.384 [main            ] INFO  TradeTest              - Starting TradeTest using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 12256 (started by 杨晓灿 in E:\java_project\GroupBuyMarket\GroupBuyMarket-app)
+25-02-09.13:43:43.393 [main            ] INFO  TradeTest              - The following 1 profile is active: "dev"
+25-02-09.13:43:43.393 [background-preinit] INFO  Version                - HV000001: Hibernate Validator 6.2.5.Final
+25-02-09.13:43:44.068 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-09.13:43:44.068 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-09.13:43:44.099 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+25-02-09.13:43:44.602 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$bf079479] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:43:44.617 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:43:44.962 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-09.13:43:45.419 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.13:43:45.736 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.13:43:45.752 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:43:48.660 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-09.13:43:49.535 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:43:49.535 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyOrderDelayListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+25-02-09.13:43:50.008 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:43:50.008 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyMarketSuccessListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_2
+25-02-09.13:43:50.024 [main            ] INFO  TradeTest              - Started TradeTest in 6.899 seconds (JVM running for 7.481)
+25-02-09.13:43:50.221 [main            ] INFO  TradeSettlementOrderService - 拼团交易-支付结算, userId:y1, outTradeNo:01
+25-02-09.13:43:50.241 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-09.13:43:50.617 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-09.13:43:50.647 [main            ] WARN  OutTradeNoExistFilter  - 拼团交易-外部订单:01, 已经成团或者过期
+25-02-09.13:43:51.236 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.13:43:51.236 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.13:43:51.267 [SpringApplicationShutdownHook] INFO  DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:43:51.267 [SpringApplicationShutdownHook] INFO  DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:43:51.362 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.13:43:51.362 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.13:43:51.441 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.13:43:51.441 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.13:43:51.441 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-02-09.13:43:51.457 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-02-09.13:45:18.956 [main            ] INFO  TradeTest              - Starting TradeTest using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 27496 (started by 杨晓灿 in E:\java_project\GroupBuyMarket\GroupBuyMarket-app)
+25-02-09.13:45:18.957 [main            ] INFO  TradeTest              - The following 1 profile is active: "dev"
+25-02-09.13:45:18.964 [background-preinit] INFO  Version                - HV000001: Hibernate Validator 6.2.5.Final
+25-02-09.13:45:19.645 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-09.13:45:19.646 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-09.13:45:19.674 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+25-02-09.13:45:20.107 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$bf079479] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:45:20.121 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:45:20.458 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-09.13:45:20.856 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.13:45:21.451 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.13:45:21.477 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:45:24.282 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-09.13:45:25.181 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:45:25.181 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyOrderDelayListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+25-02-09.13:45:25.622 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:45:25.622 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyMarketSuccessListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_2
+25-02-09.13:45:25.638 [main            ] INFO  TradeTest              - Started TradeTest in 6.949 seconds (JVM running for 7.512)
+25-02-09.13:45:25.787 [main            ] INFO  TradeSettlementOrderService - 拼团交易-支付结算, userId:y1, outTradeNo:o1
+25-02-09.13:45:25.806 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-09.13:45:26.189 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-09.13:45:26.653 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.13:45:26.653 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.13:45:26.690 [SpringApplicationShutdownHook] INFO  DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:45:26.690 [SpringApplicationShutdownHook] INFO  DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:45:26.779 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.13:45:26.779 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.13:45:26.854 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.13:45:26.854 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.13:45:26.855 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-02-09.13:45:26.869 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-02-09.13:45:43.937 [main            ] INFO  TradeTest              - Starting TradeTest using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 8908 (started by 杨晓灿 in E:\java_project\GroupBuyMarket\GroupBuyMarket-app)
+25-02-09.13:45:43.938 [main            ] INFO  TradeTest              - The following 1 profile is active: "dev"
+25-02-09.13:45:43.945 [background-preinit] INFO  Version                - HV000001: Hibernate Validator 6.2.5.Final
+25-02-09.13:45:44.584 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-09.13:45:44.586 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-09.13:45:44.612 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+25-02-09.13:45:45.072 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$bf079479] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:45:45.087 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:45:45.438 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-09.13:45:45.840 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.13:45:46.111 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.13:45:46.144 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:45:48.931 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-09.13:45:49.784 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:45:49.784 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyOrderDelayListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+25-02-09.13:45:50.223 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:45:50.223 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyMarketSuccessListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_2
+25-02-09.13:45:50.238 [main            ] INFO  TradeTest              - Started TradeTest in 6.567 seconds (JVM running for 7.162)
+25-02-09.13:45:50.398 [main            ] INFO  TradeSettlementOrderService - 拼团交易-支付结算, userId:y2, outTradeNo:o2
+25-02-09.13:45:50.417 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-09.13:45:50.812 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-09.13:45:51.444 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.13:45:51.446 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.13:45:51.488 [SpringApplicationShutdownHook] INFO  DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:45:51.489 [SpringApplicationShutdownHook] INFO  DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:45:51.571 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.13:45:51.572 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.13:45:51.662 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.13:45:51.662 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.13:45:51.663 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-02-09.13:45:51.678 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-02-09.13:45:56.224 [main            ] INFO  TradeTest              - Starting TradeTest using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 20388 (started by 杨晓灿 in E:\java_project\GroupBuyMarket\GroupBuyMarket-app)
+25-02-09.13:45:56.225 [main            ] INFO  TradeTest              - The following 1 profile is active: "dev"
+25-02-09.13:45:56.231 [background-preinit] INFO  Version                - HV000001: Hibernate Validator 6.2.5.Final
+25-02-09.13:45:56.905 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-09.13:45:56.907 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-09.13:45:56.936 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+25-02-09.13:45:57.370 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$7ff8357b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:45:57.390 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:45:57.766 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-09.13:45:58.163 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.13:45:58.744 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.13:45:58.776 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:46:01.649 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-09.13:46:02.543 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:46:02.544 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyOrderDelayListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+25-02-09.13:46:03.013 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:46:03.013 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyMarketSuccessListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_2
+25-02-09.13:46:03.030 [main            ] INFO  TradeTest              - Started TradeTest in 7.1 seconds (JVM running for 7.686)
+25-02-09.13:46:03.200 [main            ] INFO  TradeSettlementOrderService - 拼团交易-支付结算, userId:y3, outTradeNo:o3
+25-02-09.13:46:03.220 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-09.13:46:03.615 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-09.13:46:03.668 [main            ] INFO  TradeRepository        - 拼团交易-团:46168757完成
+25-02-09.13:46:03.682 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:GroupBuyMarketSuccessEvent message:{"data":{"userEntities":[{"outTradeNo":"o1","productId":"1001","userId":"y1"},{"outTradeNo":"o2","productId":"1001","userId":"y2"},{"outTradeNo":"o3","productId":"1001","userId":"y3"}]},"id":"260159316767","timestamp":"2025-02-09 13:46:03.672"}
+25-02-09.13:46:04.327 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.13:46:04.328 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.13:46:04.369 [SpringApplicationShutdownHook] INFO  DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:46:04.371 [SpringApplicationShutdownHook] INFO  DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:46:04.450 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.13:46:04.451 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.13:46:04.534 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.13:46:04.534 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.13:46:04.536 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-02-09.13:46:04.547 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-02-09.13:46:47.078 [main            ] INFO  TradeTest              - Starting TradeTest using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 18744 (started by 杨晓灿 in E:\java_project\GroupBuyMarket\GroupBuyMarket-app)
+25-02-09.13:46:47.079 [main            ] INFO  TradeTest              - The following 1 profile is active: "dev"
+25-02-09.13:46:47.086 [background-preinit] INFO  Version                - HV000001: Hibernate Validator 6.2.5.Final
+25-02-09.13:46:47.777 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-09.13:46:47.779 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-09.13:46:47.809 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+25-02-09.13:46:48.245 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$bf079479] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:46:48.259 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:46:48.616 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-09.13:46:48.990 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.13:46:49.279 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.13:46:49.313 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:46:52.077 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-09.13:46:53.178 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:46:53.180 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyOrderDelayListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+25-02-09.13:46:53.638 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:46:53.638 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyMarketSuccessListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_2
+25-02-09.13:46:53.654 [main            ] INFO  TradeTest              - Started TradeTest in 6.863 seconds (JVM running for 7.429)
+25-02-09.13:46:53.799 [main            ] INFO  TradeSettlementOrderService - 拼团交易-支付结算, userId:y3, outTradeNo:o3
+25-02-09.13:46:53.818 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-09.13:46:54.233 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-09.13:46:54.268 [main            ] WARN  OutTradeNoExistFilter  - 拼团交易-外部订单:o3, 已经成团或者过期
+25-02-09.13:46:55.171 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.13:46:55.171 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.13:46:55.215 [SpringApplicationShutdownHook] INFO  DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:46:55.215 [SpringApplicationShutdownHook] INFO  DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:46:55.292 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.13:46:55.293 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.13:46:55.377 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:9876] result: true
+25-02-09.13:46:55.377 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[117.72.40.102:10911] result: true
+25-02-09.13:46:55.378 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-02-09.13:46:55.386 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-02-09.13:47:52.506 [main            ] INFO  ApiTest                - Starting ApiTest using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 10184 (started by 杨晓灿 in E:\java_project\GroupBuyMarket\GroupBuyMarket-app)
+25-02-09.13:47:52.507 [main            ] INFO  ApiTest                - The following 1 profile is active: "dev"
+25-02-09.13:47:52.513 [background-preinit] INFO  Version                - HV000001: Hibernate Validator 6.2.5.Final
+25-02-09.13:47:53.165 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-09.13:47:53.167 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-09.13:47:53.196 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+25-02-09.13:47:53.633 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$50864af8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:47:53.648 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:47:53.997 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-09.13:47:54.382 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.13:47:54.994 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.13:47:55.021 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:47:57.791 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-09.13:47:58.642 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:47:58.642 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyOrderDelayListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+25-02-09.13:47:59.083 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:47:59.083 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyMarketSuccessListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_2
+25-02-09.13:47:59.100 [main            ] INFO  ApiTest                - Started ApiTest in 6.869 seconds (JVM running for 7.428)
+25-02-09.13:47:59.261 [main            ] INFO  EventPublisher         - 发送MQ延迟消息 topic:GroupBuyOrderDelayEvent message:{"data":"46168757","id":"095116613617","timestamp":"2025-02-09 13:47:59.253"}
+25-02-09.13:48:00.491 [ConsumeMessageThread_1] INFO  GroupBuyMarketSuccessListener - 拼团交易结果- productId:1001, openId:y1, orderId:o1
+25-02-09.13:48:00.491 [ConsumeMessageThread_1] INFO  GroupBuyMarketSuccessListener - 拼团交易结果- productId:1001, openId:y2, orderId:o2
+25-02-09.13:48:00.491 [ConsumeMessageThread_1] INFO  GroupBuyMarketSuccessListener - 拼团交易结果- productId:1001, openId:y3, orderId:o3
+25-02-09.13:54:26.615 [main            ] INFO  ApiTest                - Starting ApiTest using Java 1.8.0_371 on LAPTOP-T7SUU4QG with PID 2360 (started by 杨晓灿 in E:\java_project\GroupBuyMarket\GroupBuyMarket-app)
+25-02-09.13:54:26.616 [main            ] INFO  ApiTest                - The following 1 profile is active: "dev"
+25-02-09.13:54:26.623 [background-preinit] INFO  Version                - HV000001: Hibernate Validator 6.2.5.Final
+25-02-09.13:54:27.346 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-09.13:54:27.348 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-09.13:54:27.376 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+25-02-09.13:54:27.824 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.ant0n.gbm.config.RedisClientConfig$$EnhancerBySpringCGLIB$$50864af8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:54:27.839 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.ant0n.gbm.config.RedisClientConfigProperties' of type [cn.ant0n.gbm.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:54:28.213 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-09.13:54:28.634 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.13:54:28.915 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.40.102/117.72.40.102:6379
+25-02-09.13:54:28.943 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-02-09.13:54:31.720 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-02-09.13:54:32.616 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-order-delay-group', nameServer='117.72.40.102:9876', topic='GroupBuyOrderDelayEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:54:32.618 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyOrderDelayListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+25-02-09.13:54:33.080 [main            ] INFO  DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='group-buy-consumer-group', nameServer='117.72.40.102:9876', topic='GroupBuyMarketSuccessEvent', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+25-02-09.13:54:33.080 [main            ] INFO  ListenerContainerConfiguration - Register the listener to container, listenerBeanName:groupBuyMarketSuccessListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_2
+25-02-09.13:54:33.096 [main            ] INFO  ApiTest                - Started ApiTest in 6.76 seconds (JVM running for 7.338)
+25-02-09.13:54:33.252 [main            ] INFO  EventPublisher         - 发送MQ延迟消息 topic:GroupBuyOrderDelayEvent message:{"data":"46168757","id":"188873823620","timestamp":"2025-02-09 13:54:33.245"}
+25-02-09.13:55:33.711 [ConsumeMessageThread_1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-02-09.13:55:34.056 [ConsumeMessageThread_1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-02-09.13:55:34.086 [ConsumeMessageThread_1] INFO  TradeOrderDelayNotifyService - 拼团交易-团:46168757未完成目标拼单...
+25-02-09.13:55:34.105 [ConsumeMessageThread_1] INFO  EventPublisher         - 发送MQ消息 topic:GroupBuyOrderCancelEvent message:{"data":{"refundItems":[{"outTradeNo":"o1","userId":"y1"},{"outTradeNo":"o2","userId":"y2"}]},"id":"513976456717","timestamp":"2025-02-09 13:55:34.1"}
+25-02-09.13:55:34.184 [ConsumeMessageThread_1] INFO  GroupBuyOrderDelayListener - 拼团交易-发送退款消息成功!
