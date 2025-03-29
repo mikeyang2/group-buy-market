@@ -15,4 +15,5 @@ public class ProductSkuVO {
     private String productId;
     private String productName;
     private BigDecimal price;
+    private String test;
 }
